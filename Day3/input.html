@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <SCRIPT>
+
+        function add(){
+            n1= document.getElementById("number1").value;
+            n2= document.getElementById("number2").value;
+            result = +n1 + +n2;
+            document.getElementById("output").innerHTML = result;   
+        }
+
+        function sub(){
+             n1= document.getElementById("number1").value;
+            n2= document.getElementById("number2").value;
+            result = +n1 - +n2;
+            document.getElementById("output").innerHTML = result;   
+        }
+
+         function mul(){
+             n1= document.getElementById("number1").value;
+            n2= document.getElementById("number2").value;
+            result = +n1 * +n2;
+            document.getElementById("output").innerHTML = result;   
+        }
+
+         function div(){
+             n1= document.getElementById("number1").value;
+            n2= document.getElementById("number2").value;
+            result = +n1 / +n2;
+            document.getElementById("output").innerHTML = result;   
+        }
+
+
+
+    </SCRIPT>
+
+
+
+</head>
+<body>
+    
+    <label>Number 1</label>
+    <input type="text" id="number1">
+    <br>
+    <br>
+    <label>Number 2</label>
+    <input type="text" id="number2">
+    <br>
+    <br>
+    <br>
+    <button onclick="add()">Add</button>
+    <br>
+    <br>
+    <button onclick="sub()">Sub</button>
+    <br>
+    <br>
+    <button onclick="mul()">Mul</button>
+    <br>
+    <br>
+    <button onclick="div()">Div</button>
+    <br>
+    <h1>result : <span id="output"></span></h1>
+
+
+
+</body>
+</html>
