@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function FindSmallestNumber(){
+
+            n1 = document.getElementById("number1").value;
+            n2 = document.getElementById("number2").value;
+
+
+            n1 = parseInt(n1);
+            n2 = parseInt(n2);
+
+            if(n1 < n2){
+                document.getElementById("output").innerHTML = n1;
+            }
+            else{
+                document.getElementById("output").innerHTML = n2;
+            }
+        }
+
+    </script>
+
+
+
+</head>
+<body>
+    
+    <label>Number 1</label>
+    <input type="text" id="number1">
+
+    <label>Number 2</label>
+    <input type="text" id="number2">
+
+    <button onclick="FindSmallestNumber()">Find Smallest number</button>
+    <h1>small number : <span id="output"></span></h1>
+
+
+
+</body>
+</html>
